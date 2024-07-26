@@ -120,7 +120,7 @@ function LoginPage({ setlogin }: { setlogin: (arg0: boolean) => void }) {
         {/* Sign Up Link */}
         <div className="mt-8">
           <div className="text-sm">
-            Don't have an account?{" "}
+            Dont have an account?{" "}
             <div
               onClick={() => {
                 setlogin(false);
