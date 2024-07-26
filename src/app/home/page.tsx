@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
-function page() {
+const page = () => {
   const [peers, setpeers] = useState([]);
   const router = useRouter();
   const notifyLogout = () => {
@@ -68,6 +68,6 @@ function page() {
       <Toaster />
     </div>
   );
-}
+};
 
 export default page;
