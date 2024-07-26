@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
-function page({ params }: { params: any }) {
+const page = ({ params }: { params: any }) => {
   const [token, setToken] = useState("");
   const notifyFailure = () => toast("Invalid token");
   const notifySuccess = () =>
@@ -57,6 +57,6 @@ function page({ params }: { params: any }) {
       <Toaster />
     </main>
   );
-}
+};
 
 export default page;
